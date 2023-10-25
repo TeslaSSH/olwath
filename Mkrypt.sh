@@ -5,6 +5,8 @@ command_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
+# install Compiler
+sudo apt install gcc >/dev/null 2>&1
 # Check if the shc utility is installed
 if ! command_exists shc; then
   echo "Error: shc utility is not installed."
